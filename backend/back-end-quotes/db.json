@@ -1,0 +1,106 @@
+{
+  "quotes": [
+    {
+      "id": "1",
+      "text": "The best way to predict the future is to invent it.",
+      "author": "Alan Kay",
+      "likes": 18
+    },
+    {
+      "id": "2",
+      "text": "Life is what happens when you're busy making other plans.",
+      "author": "John Lennon",
+      "likes": 6
+    },
+    {
+      "id": "3",
+      "text": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+      "author": "James Cameron",
+      "likes": 2
+    },
+    {
+      "id": "4",
+      "text": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "likes": 2
+    },
+    {
+      "id": "5",
+      "text": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Eleanor Roosevelt",
+      "likes": 4
+    },
+    {
+      "id": "6",
+      "text": "You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one.",
+      "author": "John Lennon",
+      "likes": 3
+    },
+    {
+      "id": "7",
+      "text": "The only thing we have to fear is fear itself.",
+      "author": "Franklin D. Roosevelt",
+      "likes": 4
+    },
+    {
+      "id": "8",
+      "text": "Well done is better than well said.",
+      "author": "Benjamin Franklin",
+      "likes": 9
+    },
+    {
+      "id": "295b",
+      "text": "nnnnnnn",
+      "author": "sas",
+      "likes": 1
+    },
+    {
+      "id": "b810",
+      "text": "sac",
+      "author": "casca",
+      "likes": 2
+    },
+    {
+      "id": "486b",
+      "text": "eeee",
+      "author": "eeeee",
+      "likes": 7
+    },
+    {
+      "id": "2ef1",
+      "text": "",
+      "author": "",
+      "likes": 0
+    },
+    {
+      "id": "2b86",
+      "text": "scs",
+      "author": "asc",
+      "likes": 1
+    },
+    {
+      "id": "46de",
+      "text": "rrrr",
+      "author": "rrrrr",
+      "likes": null
+    },
+    {
+      "id": "01e5",
+      "text": "react",
+      "author": "yigiy",
+      "likes": 1
+    },
+    {
+      "id": "5b76",
+      "text": "mjnnnnn",
+      "author": "hhhhhh",
+      "likes": 1
+    },
+    {
+      "id": "7872",
+      "text": "react",
+      "author": "yigiy",
+      "likes": 0
+    }
+  ]
+}

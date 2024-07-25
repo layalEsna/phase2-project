@@ -1,13 +1,14 @@
 import '../App.css';
-import QuotList from './QuotList';
+////import QuotList from './QuotList';
 import React, { useState, useEffect } from 'react';
-import Search from './Search'
-import Form from './Form';
-
+////import Search from './Search'
+////import Form from './Form';
+import NavBar from '../pages/NavBar';
+import { Outlet } from 'react-router-dom';
 function App() {
   const [quotes, setQuotes] = useState([]);
   const [isToggled, setToggleQ] = useState({})
-  const [searchByAuthor, setSearchByAuthor] = useState('')
+  
   const [newQuote, setNewQuote] = useState({
     text: '',
     author: '',
@@ -33,11 +34,8 @@ function App() {
     }))
     
   }
-  function handleSearch(name) {
-    setSearchByAuthor(name)
-  }
+  //////
 
-  const newList = quotes.filter(quot => quot && quot.author && quot.author.toLowerCase().includes(searchByAuthor.toLowerCase()));
 
   function handleInputs(e) {
     const { name, value } = e.target
@@ -74,10 +72,49 @@ function App() {
       })
     .catch(e=> console.error(e))
   }
+  function handleLikes(qId) {
+    const quoteToUpdate = quotes.find(q => q.id === qId)
+    const addLikes = {
+      ...quoteToUpdate, likes: quoteToUpdate.likes + 1
+      
+      
+    }
+    fetch(`http://localhost:3001/quotes/${qId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify({
+        likes: addLikes.likes
+      })
+    })
+      .then(res=> res.json())
+      .then(() => {
+        setQuotes(prev => prev.map(q => q.id === qId ?
+      addLikes: q))
+    })
+    }
 
    return (
-      <div className="App">
-        <Search
+     <div className="App">
+       <header>
+         <NavBar/>
+       </header>
+       <Outlet
+         context={{
+          quotes,
+          handleToggle,
+          isToggled,
+          handleLikes,
+         
+         
+          handleInputs,
+          handleSubmit,
+          newQuote
+         }}
+       />
+        {/* <Search
           handleSearch={handleSearch}
           searchByAuthor={searchByAuthor}
         />
@@ -88,11 +125,12 @@ function App() {
         />
         <QuotList quotes={newList}
           handleToggle={handleToggle}
-          isToggled={isToggled}
+         isToggled={isToggled}
+         handleLikes={handleLikes} />*/}
           
           
           
-        />
+        
         </div>
     );
 }
