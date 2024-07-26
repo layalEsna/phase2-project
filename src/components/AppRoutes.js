@@ -6,6 +6,7 @@ import Search from './Search';
 import Form from './Form';
 import ErrorPage from '../pages/ErrorPage';
 
+
 const AppRoutes = () => (
     <Routes>
         <Route path="/" element={<App />}>

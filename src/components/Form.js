@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
-
+import '../App.css';
 function Form() {
     const {setQuotes}= useOutletContext()
     const [newQuote, setNewQuote] = useState({
@@ -47,27 +47,33 @@ function Form() {
       }
     
     return (
-        <div>
-            <h1>Form</h1>
+        <div className="form-container">
+            <h1 className="title">Form</h1>
             <form onSubmit={handleSubmit}>
+                <div  className="form-group">
                 <input
+                    className="form-input"
                     type="text"
                     value={ newQuote.text}
                     placeholder="Quote..."
                     name="text"
                     onChange={(e)=>handleInputs(e)}
-                />
+                    />
+                </div>
+                <div  className="form-group">
                 <input
+                    className="form-input"
                     type="text"
                     value={ newQuote.author}
                     placeholder="Author..."
                     name="author"
                     onChange={ (e)=>handleInputs(e)}
-                />
-                <button type="submit">Add a new quote</button>
+                    />
+                    </div>
+                <button type="submit" className="form-button">Add a new quote</button>
             </form>
             <div>
-                <p>{newQuote.text}</p>
+                <p className="description">{newQuote.text}</p>
                 <p>{newQuote.author}</p>
                 
             </div>

@@ -38,11 +38,11 @@
 }
 
 .large {
-  font-size: 30px;
+  font-size: 40px;
 }
 .blue{
   font-size: large;
-  color: blue;
+  color: rgb(64, 146, 227);
 }
 .cc{
   font-size: 18px;
@@ -52,7 +52,7 @@
   font-size: 20px;
 }
 
-.v{
+.i{
   font-size: 22px;
 }
 
@@ -62,4 +62,84 @@
 
 .k{
   font-size: 40px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form-input:focus {
+  border-color: #b0d8e3;
+  outline: none;
+}
+.form-button {
+  background-color: #467886;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+}
+
+.form-button:hover {
+  background-color: #9dc9e4;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 35px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text{
+  font-size: 20px;
+ 
 }

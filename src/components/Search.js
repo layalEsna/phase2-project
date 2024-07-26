@@ -1,7 +1,7 @@
 ///import React from "react";
 import React, {useState} from 'react'
 import { useOutletContext } from "react-router-dom";
-
+import '../App.css'
 function Search() {
    
 const [searchByAuthor, setSearchByAuthor] = useState('')
@@ -25,10 +25,11 @@ const [searchByAuthor, setSearchByAuthor] = useState('')
 
     
     return (
-        <div>
-            <h1>Search</h1>
-            <div>
-            <input
+        <div className='form-container'>
+            <h1 className="title">Search</h1>
+            <div className='form-group'>
+          <input
+            className='form-input'
                 placeholder="Search By Name..."
                 onChange={handleSearch}
                 value={searchByAuthor}
@@ -41,8 +42,8 @@ const [searchByAuthor, setSearchByAuthor] = useState('')
           newList.length > 0 ? (
             newList.map((quote, index) => (
               <div key={index}>
-                <p>{quote.text}</p>
-                <p>{quote.author}</p>
+                <p className='description'>{quote.text}</p>
+                <p className='description'> {quote.author}</p>
               </div>
             ))
           ) : (
