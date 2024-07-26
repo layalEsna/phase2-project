@@ -4,7 +4,7 @@
       "id": "1",
       "text": "The best way to predict the future is to invent it.",
       "author": "Alan Kay",
-      "likes": 18
+      "likes": 24
     },
     {
       "id": "2",
@@ -52,55 +52,55 @@
       "id": "295b",
       "text": "nnnnnnn",
       "author": "sas",
-      "likes": 1
-    },
-    {
-      "id": "b810",
-      "text": "sac",
-      "author": "casca",
       "likes": 2
     },
     {
-      "id": "486b",
-      "text": "eeee",
-      "author": "eeeee",
-      "likes": 7
-    },
-    {
-      "id": "2ef1",
-      "text": "",
-      "author": "",
+      "id": "256e",
+      "text": "a",
+      "author": "a",
       "likes": 0
     },
     {
-      "id": "2b86",
-      "text": "scs",
-      "author": "asc",
+      "id": "ad8f",
+      "text": "a",
+      "author": "a",
+      "likes": 0
+    },
+    {
+      "id": "1d7b",
+      "text": "a",
+      "author": "a",
       "likes": 1
     },
     {
-      "id": "46de",
-      "text": "rrrr",
-      "author": "rrrrr",
-      "likes": null
-    },
-    {
-      "id": "01e5",
-      "text": "react",
-      "author": "yigiy",
-      "likes": 1
-    },
-    {
-      "id": "5b76",
-      "text": "mjnnnnn",
-      "author": "hhhhhh",
-      "likes": 1
-    },
-    {
-      "id": "7872",
+      "id": "2cbf",
       "text": "react",
       "author": "yigiy",
       "likes": 0
+    },
+    {
+      "id": "2994",
+      "text": "a",
+      "author": "aaa",
+      "likes": 1
+    },
+    {
+      "id": "e9d9",
+      "text": "layla_1380@yahoo.com",
+      "author": "yigiy",
+      "likes": 0
+    },
+    {
+      "id": "9d56",
+      "text": "react",
+      "author": "yigiy",
+      "likes": 0
+    },
+    {
+      "id": "b049",
+      "text": "layla_1380@yahoo.com",
+      "author": "yigiy",
+      "likes": 1
     }
   ]
 }

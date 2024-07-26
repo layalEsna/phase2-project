@@ -1,14 +1,18 @@
-import { useRouteError } from "react-router-dom";
+
+import React from 'react';
+import NavBar from './NavBar';
 
 function ErrorPage() {
-    const error = useRouteError()
-    console.error(error)
-
-    return (
-        <main>
-            <h1>Whoops! Something went wrong!</h1>
-        </main>
+    return(
+        <div>
+           
+            <NavBar/>
+        <h1>Page Not Found</h1>
+        <p>Sorry, the page you are looking for does not exist.</p>
+            </div>
+            
     )
 }
 
-export default ErrorPage
+
+export default ErrorPage;
